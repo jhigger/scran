@@ -18,14 +18,17 @@ const bg = 'green.400';
 const NavLink = ({ href, children, ...rest }) => (
 	<NextLink href={href.toLowerCase()} passHref>
 		<Link
+			as={Button}
+			colorscheme="green"
+			bg={bg}
+			color="white"
 			_hover={{
-				textDecoration: 'none'
+				textDecoration: 'none',
+				bg: 'green.500'
 			}}
 			{...rest}
 		>
-			<Button colorscheme="green" bg={bg} color="white">
-				{children}
-			</Button>
+			{children}
 		</Link>
 	</NextLink>
 );
