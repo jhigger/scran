@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Hero from '../components/Hero';
+import Map from '../components/Map';
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Hero py={20} />
+			<Map />
 		</>
 	);
 }
