@@ -35,7 +35,7 @@ export default function Hero(props) {
 							bg: 'green.500'
 						}}
 						as="a"
-						href="#live-map"
+						href="#map"
 					>
 						Live Map
 					</Button>
