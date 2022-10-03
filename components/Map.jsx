@@ -3,7 +3,7 @@ import { AspectRatio, Box, Container, Heading } from '@chakra-ui/react';
 const Map = (props) => {
 	return (
 		<Box bg="green.400" {...props}>
-			<Heading align="center" color="white" my={8} id="live-map">
+			<Heading align="center" color="white" my={8}>
 				Live Map
 			</Heading>
 			<Container maxW="container.lg" id="map">
