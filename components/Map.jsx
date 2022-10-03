@@ -1,12 +1,12 @@
 import { AspectRatio, Box, Container, Heading } from '@chakra-ui/react';
 
-const Map = () => {
+const Map = (props) => {
 	return (
-		<Box bg="green.400" p={8}>
-			<Heading align="center" color="white" pb={4} id="live-map">
+		<Box bg="green.400" {...props}>
+			<Heading align="center" color="white" my={8} id="live-map">
 				Live Map
 			</Heading>
-			<Container maxW="container.lg">
+			<Container maxW="container.lg" id="map">
 				<AspectRatio ratio={16 / 9}>
 					<Box
 						as="iframe"
