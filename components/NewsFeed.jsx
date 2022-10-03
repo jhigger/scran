@@ -1,27 +1,29 @@
-import {
-	AspectRatio,
-	Box,
-	Container,
-	Heading,
-	SimpleGrid
-} from '@chakra-ui/react';
+import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react';
 
 const NewsFeed = (props) => {
 	return (
-		<Box {...props}>
+		<Box py={8} {...props}>
 			<Heading align="center" color="white" my={8} id="news">
 				News
 			</Heading>
 			<Container maxW="container.lg">
-				<SimpleGrid columns={[1, 2]} spacing={4} row={1}>
-					<rssapp-feed id="_TaqOVIln8c9y3xXr"></rssapp-feed>
-					<script
-						src="https://widget.rss.app/v1/feed.js"
-						type="text/javascript"
-						async
-					></script>
-
-					<div>{/* 2nd column here */}</div>
+				<SimpleGrid columns={[1, 2]} spacing={4}>
+					<Box
+						as="iframe"
+						src="https://rss.app/embed/v1/feed/_TaqOVIln8c9y3xXr"
+						alt="twitter feed"
+						borderRadius="lg"
+						w="full"
+						h="80vh"
+					/>
+					<Box
+						as="iframe"
+						src="https://rss.app/embed/v1/feed/_5UP4R7tyhrpio2CE"
+						alt="twitter feed"
+						borderRadius="lg"
+						w="full"
+						h="80vh"
+					/>
 				</SimpleGrid>
 			</Container>
 		</Box>
