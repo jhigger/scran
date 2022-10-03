@@ -7,14 +7,14 @@ const NewsFeed = (props) => {
 				News
 			</Heading>
 			<Container maxW="container.lg">
-				<SimpleGrid columns={[1, 2]} spacing={4}>
+				<SimpleGrid columns={[1, 2]} spacing={4} h="xl">
 					<Box
 						as="iframe"
 						src="https://rss.app/embed/v1/feed/_TaqOVIln8c9y3xXr"
 						alt="twitter feed"
 						borderRadius="lg"
 						w="full"
-						h="80vh"
+						h="full"
 					/>
 					<Box
 						as="iframe"
@@ -22,7 +22,7 @@ const NewsFeed = (props) => {
 						alt="twitter feed"
 						borderRadius="lg"
 						w="full"
-						h="80vh"
+						h="full"
 					/>
 				</SimpleGrid>
 			</Container>
