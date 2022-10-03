@@ -15,7 +15,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Hero py={20} pt={36} />
-			<Map p={8} />
+			<Map py={8} />
 			<NewsFeed />
 		</>
 	);
